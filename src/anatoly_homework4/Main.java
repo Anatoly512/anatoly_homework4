@@ -33,7 +33,7 @@ public class Main {
 
         System.out.println(Message.THANK_YOU);
 
-        calculate.printOfNumbers(choiceNumber);
+        calculate.printOfNumbers(choiceNumber);   //  Тестовый запуск
 
     }
 

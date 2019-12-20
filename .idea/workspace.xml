@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e82b30b5-6993-47a0-b106-3a2db48b1253" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/anatoly_homework4/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/anatoly_homework4/Calculate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/anatoly_homework4/DataReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/anatoly_homework4/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/anatoly_homework4/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/anatoly_homework4/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/anatoly_homework4/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/anatoly_homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/anatoly_homework4/Main.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +31,11 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1VFOoJTTKIUHeQr3BQyE41ro9lq" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/anatoly_homework4" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -40,6 +43,9 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Java\Projects\anatoly__homework4\src\anatoly_homework4" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Java\Projects\anatoly__homework4\src\homework4" />
     </key>
@@ -101,5 +107,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>
