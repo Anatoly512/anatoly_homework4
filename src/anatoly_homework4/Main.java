@@ -12,6 +12,7 @@ public class Main {
 
     private void choiceOfTasks() {
         int choiceNumber = 0;
+        boolean trigger = true;
 
         // Task 1   function printOfNumbers prints list from 1 to x numbers  (x)
         // Task 2   drawRectangle  (x, y)
@@ -20,21 +21,51 @@ public class Main {
         // Task 5   ==  Task 1 using recursion
         // Task 6   ==  Task 2 using recursion
 
-        System.out.println(Message.CHOOSE_TASK);  // Выбор из 6 заданий
-        System.out.println(Message.TASK_ONE_PRINT_LIST + Message.Empty_String_For_Task_1);
-        System.out.println(Message.TASK_TWO_DRAW_RECTANGLE_DIFFER_SIDES + Message.Empty_String_For_Task_2);
-        System.out.println(Message.TASK_THREE_DRAW_RECTANGLE_DIFFER_SIDES + Message.Empty_String_For_Task_3);
-        System.out.println(Message.TASK_FOUR_GET_MAX_VALUE + Message.Empty_String_For_Task_4);
-        System.out.println(Message.TASK_FIVE_RECURSION_PRINT_LIST + Message.Empty_String_For_Task_5);
-        System.out.println(Message.TASK_SIX_RECURSION_DRAW_RECTANGLE + Message.Empty_String_For_Task_6);
+        while (trigger) {
+            System.out.println(Message.CHOOSE_TASK);  // Выбор из 6 заданий
+            System.out.println(Message.TASK_ONE_PRINT_LIST + Message.Empty_String_For_Task_1);
+            System.out.println(Message.TASK_TWO_DRAW_RECTANGLE_DIFFER_SIDES + Message.Empty_String_For_Task_2);
+            System.out.println(Message.TASK_THREE_DRAW_RECTANGLE_DIFFER_SIDES + Message.Empty_String_For_Task_3);
+            System.out.println(Message.TASK_FOUR_GET_MAX_VALUE + Message.Empty_String_For_Task_4);
+            System.out.println(Message.TASK_FIVE_RECURSION_PRINT_LIST + Message.Empty_String_For_Task_5);
+            System.out.println(Message.TASK_SIX_RECURSION_DRAW_RECTANGLE + Message.Empty_String_For_Task_6);
 
-        choiceNumber = DataReader.readNumber();
+            choiceNumber = DataReader.readNumber();
 
 
-        System.out.println(Message.THANK_YOU);
+            if (choiceNumber == 1) {
+                calculate.printOfNumbers();   //  Тестовый запуск
+            }
+            else
+            {
+                if (choiceNumber == 2){
+                } else {
+                    if (choiceNumber == 3){
+                    }
+                    else {
+                        if (choiceNumber == 4){
+                        }
+                        else {
+                            if (choiceNumber == 5){
+                            }
+                            else {
+                                if (choiceNumber == 6){
+                                }
+                                else {
+                                    System.out.println(Message.CHOOSE_WRONG);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
 
-        calculate.printOfNumbers(choiceNumber);   //  Тестовый запуск
+
+        }
+
+
 
     }
+
 
 }

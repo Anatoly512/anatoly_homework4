@@ -21,7 +21,6 @@ public class DataReader {
           }
       } while (trigger);
 
-        in.close();
         return number;
     }
 
