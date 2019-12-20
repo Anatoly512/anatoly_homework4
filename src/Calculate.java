@@ -1,5 +1,3 @@
-package homework4;
-
 public class Calculate {
 
     public void printOfNumbers(int x) {

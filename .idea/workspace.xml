@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e82b30b5-6993-47a0-b106-3a2db48b1253" name="Default Changelist" comment="" />
+    <list default="true" id="e82b30b5-6993-47a0-b106-3a2db48b1253" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework4/Calculate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Calculate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework4/DataReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework4/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/homework4/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Message.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,11 +57,11 @@
   </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="homework4.Main" />
+      <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="anatoly__homework4" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="homework4.*" />
+          <option name="PATTERN" value=".*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
