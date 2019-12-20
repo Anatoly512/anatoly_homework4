@@ -1,3 +1,5 @@
+package anatoly_homework4;
+
 import java.util.Scanner;
 
 public class DataReader {

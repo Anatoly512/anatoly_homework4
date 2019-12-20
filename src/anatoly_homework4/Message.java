@@ -1,3 +1,5 @@
+package anatoly_homework4;
+
 public class Message {
     public static final String ERROR_INPUT_MESSAGE = "\nВы ввели что-то не то!  Попробуйте ввести целое число. \n";
     public static final String CHOOSE_TASK = "Please, enter the number of your choice : ";

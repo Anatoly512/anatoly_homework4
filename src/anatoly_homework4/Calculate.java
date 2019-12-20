@@ -1,3 +1,5 @@
+package anatoly_homework4;
+
 public class Calculate {
 
     public void printOfNumbers(int x) {
