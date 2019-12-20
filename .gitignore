@@ -73,9 +73,9 @@ fabric.properties
 .idea
 .src/idea/
 .src/*.iml
+.src/*.iml/
 .idea/git/
 .idea/*.*
-.idea/git/*.*
 .idea/git/*.*
 .out/
 .out
