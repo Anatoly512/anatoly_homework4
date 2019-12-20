@@ -69,6 +69,15 @@ fabric.properties
 
 # main adds
 .idea/
+.idea/codeStyles
+.idea/codeStyles/*.*
+.idea/workspace.xml
+.idea/*.*
+.out/
+.*.iml
+.anatoly__homework4.iml
+anatoly__homework4.iml
+.idea
 .target
 .DS_STORE
 /src/main/resourses/log
