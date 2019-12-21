@@ -120,8 +120,23 @@ public class Calculate {
             }
         } while (trigger | trigger2);
 
-       //  ВВести булевые переменные floatNumber1 и floatNumber2
-       //  и явно привести нужную (вторую) Int переменную к типу Float
+
+       //  Если хотя бы одна переменная типа Float,
+       //  то все переменные явно приводятся к типу Float
+
+        if ((floatNumber1) && (floatNumber2)) {
+        }
+         else {
+             if (floatNumber1) {
+                float2  = (float) b;
+             }
+             else {
+                 if (floatNumber2) {
+                   float1  = (float) a;
+                 }
+             }
+        }
+
 
            if (!floatTrue) {
               getMaxOfTwoValues(a, b);      //  Передаются параметры типа Int
@@ -138,24 +153,32 @@ public class Calculate {
     private void getMaxOfTwoValues (int a, int b) {
         int maxValue = 0;
 
-        System.out.println(" Int value ! " + a + "  " + b);      //  Только для фазы тестирования
+        System.out.println(" Int value !  " + a + "  " + b);      //  Только для фазы тестирования
 
-        if (a > b) { maxValue = a; }
-        else maxValue = b;
-
-        System.out.println(" Max value = " + maxValue);
+        if (a == b) {
+            System.out.println(" This two numbers are equal  :  " + a + " and " + b);
+        }
+        else {
+            if (a > b) { maxValue = a; }
+            else maxValue = b;
+            System.out.println(" Max value = " + maxValue);
+        }
 
     }
 
     private void getMaxOfTwoValues (float a, float b) {
         float maxValue = 0f;
 
-        System.out.println(" Float value ! " + a + "  " + b);     //  Только для фазы тестирования
+        System.out.println(" Float value !  " + a + "  " + b);     //  Только для фазы тестирования
 
-        if (a > b) { maxValue = a; }
-        else maxValue = b;
-
-        System.out.println(" Max value = " + maxValue);
+        if (a == b) {
+            System.out.println(" This two numbers are equal  :  " + a + " and " + b);
+        }
+        else {
+            if (a > b) { maxValue = a; }
+            else maxValue = b;
+            System.out.println(" Max value = " + maxValue);
+        }
 
     }
 
