@@ -74,8 +74,8 @@ public class Calculate {
                         floatNumber1 = true;
                     }
                     catch (NumberFormatException | NullPointerException n) {
-                        System.out.println(" Something wrong during input !");
-                        System.out.print(" Please, try again : ");
+                        System.out.println(Message.WRONG_DURING_INPUT);
+                        System.out.print(Message.PLEASE_TRY_AGAIN);
                         trigger2 = true;
                      }
                 }
@@ -105,8 +105,8 @@ public class Calculate {
                         floatNumber2 = true;
                     }
                     catch (NumberFormatException | NullPointerException n) {
-                        System.out.println("\n Something wrong during input !");
-                        System.out.print(" Please, try again : ");
+                        System.out.println(Message.WRONG_DURING_INPUT);
+                        System.out.print(Message.PLEASE_TRY_AGAIN);
                         System.out.println();
                         trigger2 = true;
                     }
@@ -140,12 +140,22 @@ public class Calculate {
 
         System.out.println(" Int value ! " + a + "  " + b);      //  Только для фазы тестирования
 
+        if (a > b) { maxValue = a; }
+        else maxValue = b;
+
+        System.out.println(" Max value = " + maxValue);
+
     }
 
     private void getMaxOfTwoValues (float a, float b) {
-        float maxValue = 0;
+        float maxValue = 0f;
 
         System.out.println(" Float value ! " + a + "  " + b);     //  Только для фазы тестирования
+
+        if (a > b) { maxValue = a; }
+        else maxValue = b;
+
+        System.out.println(" Max value = " + maxValue);
 
     }
 
