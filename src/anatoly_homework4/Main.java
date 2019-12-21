@@ -39,11 +39,14 @@ public class Main {
             else
             {
                 if (choiceNumber == 2){
+                    calculate.drawRectangle();
                 } else {
                     if (choiceNumber == 3){
+                        calculate.drawRectangle(1);
                     }
                     else {
                         if (choiceNumber == 4){
+                            calculate.getMax();
                         }
                         else {
                             if (choiceNumber == 5){
