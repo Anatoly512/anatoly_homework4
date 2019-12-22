@@ -15,7 +15,6 @@ public class Calculate {
           System.out.println(i);
         }
 
-       Message.Empty_String_For_Task_1 = Message.COMPLETE;
     }
 
     public void drawRectangle() {
@@ -25,8 +24,14 @@ public class Calculate {
        x = DataReader.readNumber();
        System.out.println(Message.SIDE_TWO);
        y = DataReader.readNumber();
-       drawRectangleTwoSides(x, y);
-       Message.Empty_String_For_Task_2 = Message.COMPLETE;
+
+       if (Main.drawRectangleRecursion) {
+           drawRectangleTwoSidesRecursion(x, y);
+       }
+           else  {
+            drawRectangleTwoSides(x, y);
+        }
+
     }
 
     public void drawRectangle(int choice_equal_sides) {
@@ -35,15 +40,39 @@ public class Calculate {
          System.out.println(Message.SIDE_EQUAL_SIDES);
          x = DataReader.readNumber();
          y = x;
-         drawRectangleTwoSides(x, y);
-         Message.Empty_String_For_Task_3 = Message.COMPLETE;
+
+         if (Main.drawRectangleRecursion) {
+             drawRectangleTwoSidesRecursion(x, y);
+         }
+         else   {
+            drawRectangleTwoSides(x, y);
+         }
+
     }
 
     private void drawRectangleTwoSides(int x, int y) {
         System.out.println(" Two sides  :  " + x +", " + y);    // Test string
 
+        for (int i = 1; i <= y; i++) {       //  цикл по оси y
+            for (int m = 1; m <= x; m++) {    //  внутренний цикл по оси x
+                System.out.print(Message.SYMBOL_FOR_DRAWING);
+                if (m == x) System.out.println();
+            }
+          if (i == y) System.out.println();
+        }
 
     }
+
+    private void drawRectangleTwoSidesRecursion(int x, int y) {
+        Main.drawRectangleRecursion = false;
+        System.out.println(" Two sides  (recursion)  :  " + x +", " + y);    // Test string
+
+
+
+
+
+    }
+
 
     public void getMax () {
         int a = 0;
@@ -143,10 +172,8 @@ public class Calculate {
            }
               else {
               getMaxOfTwoValues(float1, float2);     //    Передаются параметры типа Float
-    }
+           }
 
-
-        Message.Empty_String_For_Task_4 = Message.COMPLETE;
     }
 
 
@@ -156,12 +183,12 @@ public class Calculate {
         System.out.println(" Int value !  " + a + "  " + b);      //  Только для фазы тестирования
 
         if (a == b) {
-            System.out.println(" This two numbers are equal  :  " + a + " and " + b);
+            System.out.println(Message.EQUAL_NUMBERS + a + " and " + b);
         }
         else {
             if (a > b) { maxValue = a; }
             else maxValue = b;
-            System.out.println(" Max value = " + maxValue);
+            System.out.println(Message.MAX_VALUE + maxValue);
         }
 
     }
@@ -172,12 +199,12 @@ public class Calculate {
         System.out.println(" Float value !  " + a + "  " + b);     //  Только для фазы тестирования
 
         if (a == b) {
-            System.out.println(" This two numbers are equal  :  " + a + " and " + b);
+            System.out.println(Message.EQUAL_NUMBERS + a + " and " + b);
         }
         else {
             if (a > b) { maxValue = a; }
             else maxValue = b;
-            System.out.println(" Max value = " + maxValue);
+            System.out.println(Message.MAX_VALUE + maxValue);
         }
 
     }

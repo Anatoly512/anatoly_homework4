@@ -3,6 +3,8 @@ package anatoly_homework4;
 public class Main {
 
     private Calculate calculate = new Calculate();
+    public static boolean drawRectangleRecursion;
+
     public static void main(String[] args) {
 
         Main choice = new Main();
@@ -34,25 +36,35 @@ public class Main {
 
 
             if (choiceNumber == 1) {
-                calculate.printOfNumbers();   //  Тестовый запуск
+                calculate.printOfNumbers();
+                Message.Empty_String_For_Task_1 = Message.COMPLETE;
             }
             else
             {
                 if (choiceNumber == 2){
                     calculate.drawRectangle();
+                    Message.Empty_String_For_Task_2 = Message.COMPLETE;
                 } else {
                     if (choiceNumber == 3){
                         calculate.drawRectangle(1);
+                        Message.Empty_String_For_Task_3 = Message.COMPLETE;
                     }
                     else {
                         if (choiceNumber == 4){
                             calculate.getMax();
+                            Message.Empty_String_For_Task_4 = Message.COMPLETE;
                         }
                         else {
                             if (choiceNumber == 5){
+                                drawRectangleRecursion = true;
+                                calculate.drawRectangle();
+                                Message.Empty_String_For_Task_5 = Message.COMPLETE;
                             }
                             else {
                                 if (choiceNumber == 6){
+                                    drawRectangleRecursion = true;
+                                    calculate.drawRectangle(1);
+                                    Message.Empty_String_For_Task_6 = Message.COMPLETE;
                                 }
                                 else {
                                     System.out.println(Message.CHOOSE_WRONG);
@@ -62,13 +74,7 @@ public class Main {
                     }
                 }
             }
-
-
         }
-
-
-
     }
-
-
 }
+
