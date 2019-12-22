@@ -66,7 +66,7 @@ public class Calculate {
     }
 
     private void drawRectangleTwoSides(int x, int y) {
-        System.out.println(" Two sides  :  " + x +", " + y);    // Test string
+//      System.out.println(" Two sides  :  " + x +", " + y);    // Test string
 
         for (int i = 1; i <= y; i++) {       //  цикл по оси y
             for (int m = 1; m <= x; m++) {    //  внутренний цикл по оси x
@@ -80,12 +80,25 @@ public class Calculate {
 
     private void drawRectangleTwoSidesRecursion(int x, int y) {
         Main.useRecursion = false;
-        System.out.println(" Two sides  (recursion)  :  " + x +", " + y);    // Test string
+//      System.out.println(" Two sides  (recursion)  :  " + x +", " + y);    // Test string
 
+        drawRectangleRecursion(x, y, 1, 1);
+    }
 
+    private void drawRectangleRecursion(int x, int y, int counter_x, int counter_y) {
 
+         if (counter_y > y) {
+             return;
+         }
+        System.out.print(Message.SYMBOL_FOR_DRAWING);
+        if (counter_x == x) {
+            System.out.println();
+            counter_x = 0;
+            counter_y++;
+        }
+        counter_x++;
 
-
+        drawRectangleRecursion(x, y, counter_x, counter_y);
     }
 
 
@@ -107,7 +120,6 @@ public class Calculate {
             try {
                 numberInputString = scanner.next();
                 trigger2 = false;
-
                 try {
                    a = Integer.parseInt(numberInputString);
                 }
@@ -195,7 +207,7 @@ public class Calculate {
     private void getMaxOfTwoValues (int a, int b) {
         int maxValue = 0;
 
-        System.out.println(" Int value !  " + a + "  " + b);      //  Только для фазы тестирования
+//      System.out.println(" Int value !  " + a + "  " + b);      //  Только для фазы тестирования
 
         if (a == b) {
             System.out.println(Message.EQUAL_NUMBERS + a + " and " + b);
@@ -211,7 +223,7 @@ public class Calculate {
     private void getMaxOfTwoValues (float a, float b) {
         float maxValue = 0f;
 
-        System.out.println(" Float value !  " + a + "  " + b);     //  Только для фазы тестирования
+//      System.out.println(" Float value !  " + a + "  " + b);     //  Только для фазы тестирования
 
         if (a == b) {
             System.out.println(Message.EQUAL_NUMBERS + a + " and " + b);
