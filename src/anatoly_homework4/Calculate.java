@@ -11,11 +11,21 @@ public class Calculate {
         System.out.println(Message.ENTER_NUMBER);
         x =  DataReader.readNumber();
 
-        for (int i = 1; i <=x; i++){
-          System.out.println(i);
+        if (Main.useRecursion) { printOfNumbersRecursion(x);
         }
+        else {
+            for (int i = 1; i <= x; i++) {
+                System.out.println(i);
+            }
+        }
+    }
+
+    public void printOfNumbersRecursion(int x) {
+        Main.useRecursion = false;
+
 
     }
+
 
     public void drawRectangle() {
       int x;
@@ -25,7 +35,7 @@ public class Calculate {
        System.out.println(Message.SIDE_TWO);
        y = DataReader.readNumber();
 
-       if (Main.drawRectangleRecursion) {
+       if (Main.useRecursion) {
            drawRectangleTwoSidesRecursion(x, y);
        }
            else  {
@@ -41,7 +51,7 @@ public class Calculate {
          x = DataReader.readNumber();
          y = x;
 
-         if (Main.drawRectangleRecursion) {
+         if (Main.useRecursion) {
              drawRectangleTwoSidesRecursion(x, y);
          }
          else   {
@@ -64,7 +74,7 @@ public class Calculate {
     }
 
     private void drawRectangleTwoSidesRecursion(int x, int y) {
-        Main.drawRectangleRecursion = false;
+        Main.useRecursion = false;
         System.out.println(" Two sides  (recursion)  :  " + x +", " + y);    // Test string
 
 

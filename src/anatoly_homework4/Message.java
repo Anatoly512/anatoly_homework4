@@ -8,10 +8,11 @@ public class Message {
     public static final String THANK_YOU = "Thank you!";
     public static final String TASK_ONE_PRINT_LIST = "\t  1.  Print list from 1 to x numbers";
     public static final String TASK_TWO_DRAW_RECTANGLE_DIFFER_SIDES = "\t  2.  draw the rectangle with sides your choose";
-    public static final String TASK_THREE_DRAW_RECTANGLE_DIFFER_SIDES = "\t  3.  draw the rectangle with equal sides";
+    public static final String TASK_THREE_DRAW_RECTANGLE_EQUAL_SIDES = "\t  3.  draw the rectangle with equal sides";
     public static final String TASK_FOUR_GET_MAX_VALUE = "\t  4.  get max value of two numbers";
     public static final String TASK_FIVE_RECURSION_PRINT_LIST = "\t  5.  (use recursion) Print list from 1 to x numbers";
     public static final String TASK_SIX_RECURSION_DRAW_RECTANGLE = "\t  6.  (use recursion) draw the rectangle with sides your choose";
+    public static final String TASK_SEVEN_RECURSION_DRAW_RECTANGLE_EQUAL = "\t  7.  (use recursion) draw the rectangle with equal sides";
 
     public static final String COMPLETE = "  (COMPLETE) ";
     public static String Empty_String_For_Task_1 = " ";
@@ -20,6 +21,7 @@ public class Message {
     public static String Empty_String_For_Task_4 = " ";
     public static String Empty_String_For_Task_5 = " ";
     public static String Empty_String_For_Task_6 = " ";
+    public static String Empty_String_For_Task_7 = " ";
 
     public static final String SIDE_ONE = "\n Enter side 1 :  ";
     public static final String SIDE_TWO = " Enter side 2 :  ";

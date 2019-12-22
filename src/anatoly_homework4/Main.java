@@ -3,7 +3,7 @@ package anatoly_homework4;
 public class Main {
 
     private Calculate calculate = new Calculate();
-    public static boolean drawRectangleRecursion;
+    public static boolean useRecursion;
 
     public static void main(String[] args) {
 
@@ -27,10 +27,11 @@ public class Main {
             System.out.println(Message.CHOOSE_TASK);  // Выбор из 6 заданий
             System.out.println(Message.TASK_ONE_PRINT_LIST + Message.Empty_String_For_Task_1);
             System.out.println(Message.TASK_TWO_DRAW_RECTANGLE_DIFFER_SIDES + Message.Empty_String_For_Task_2);
-            System.out.println(Message.TASK_THREE_DRAW_RECTANGLE_DIFFER_SIDES + Message.Empty_String_For_Task_3);
+            System.out.println(Message.TASK_THREE_DRAW_RECTANGLE_EQUAL_SIDES + Message.Empty_String_For_Task_3);
             System.out.println(Message.TASK_FOUR_GET_MAX_VALUE + Message.Empty_String_For_Task_4);
             System.out.println(Message.TASK_FIVE_RECURSION_PRINT_LIST + Message.Empty_String_For_Task_5);
             System.out.println(Message.TASK_SIX_RECURSION_DRAW_RECTANGLE + Message.Empty_String_For_Task_6);
+            System.out.println(Message.TASK_SEVEN_RECURSION_DRAW_RECTANGLE_EQUAL + Message.Empty_String_For_Task_7);
 
             choiceNumber = DataReader.readNumber();
 
@@ -56,18 +57,25 @@ public class Main {
                         }
                         else {
                             if (choiceNumber == 5){
-                                drawRectangleRecursion = true;
-                                calculate.drawRectangle();
+                                useRecursion = true;
+                                calculate.printOfNumbers();
                                 Message.Empty_String_For_Task_5 = Message.COMPLETE;
                             }
                             else {
                                 if (choiceNumber == 6){
-                                    drawRectangleRecursion = true;
-                                    calculate.drawRectangle(1);
+                                    useRecursion = true;
+                                    calculate.drawRectangle();
                                     Message.Empty_String_For_Task_6 = Message.COMPLETE;
                                 }
                                 else {
-                                    System.out.println(Message.CHOOSE_WRONG);
+                                    if (choiceNumber == 7) {
+                                        useRecursion = true;
+                                        calculate.drawRectangle(1);
+                                        Message.Empty_String_For_Task_7 = Message.COMPLETE;
+                                    }
+                                    else {
+                                        System.out.println(Message.CHOOSE_WRONG);
+                                    }
                                 }
                             }
                         }
