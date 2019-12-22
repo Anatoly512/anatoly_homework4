@@ -11,7 +11,7 @@ public class Calculate {
         System.out.println(Message.ENTER_NUMBER);
         x =  DataReader.readNumber();
 
-        if (Main.useRecursion) { printOfNumbersRecursion(x);
+        if (Main.useRecursion) { printOfNumbersRecursion(x, 1);
         }
         else {
             for (int i = 1; i <= x; i++) {
@@ -20,10 +20,15 @@ public class Calculate {
         }
     }
 
-    public void printOfNumbersRecursion(int x) {
+    public void printOfNumbersRecursion(int x, int count) {
         Main.useRecursion = false;
 
-
+        if (count > x) {
+            return;
+        }
+        System.out.println(count);
+        count++;
+        printOfNumbersRecursion(x, count);
     }
 
 
